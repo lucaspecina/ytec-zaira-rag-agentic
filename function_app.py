@@ -25,6 +25,7 @@ logging.basicConfig(level=os.environ.get('LOGLEVEL', 'DEBUG').upper(), force=Tru
 logging.getLogger("uvicorn.error").propagate = True
 logging.getLogger("uvicorn.access").propagate = True
 
+"""This is using the custom version"""
 
 # Create the Function App with the desired auth level.
 app = func.FunctionApp(http_auth_level=func.AuthLevel.FUNCTION)
